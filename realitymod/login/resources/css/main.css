@@ -1,0 +1,109 @@
+:root {
+    --color-primary: #F4E9DF;
+	--color-primary-rgb: 244,233,223;
+	--color-primary-contrast: #000000;
+	--color-primary-contrast-rgb: 0,0,0;
+	--color-primary-shade: #d7cdc4;
+	--color-primary-tint: #f5ebe2;
+
+    --color-green: #9EC985;
+	--color-green-rgb: 158,201,133;
+	--color-green-contrast: #000000;
+	--color-green-contrast-rgb: 0,0,0;
+	--color-green-shade: #8bb175;
+	--color-green-tint: #a8ce91;
+
+	--color-blue: #6DB2B2;
+	--color-blue-rgb: 109,178,178;
+	--color-blue-contrast: #000000;
+	--color-blue-contrast-rgb: 0,0,0;
+	--color-blue-shade: #609d9d;
+	--color-blue-tint: #7cbaba;
+
+    --color-red: #C15648;
+	--color-red-rgb: 193,86,72;
+	--color-red-contrast: #ffffff;
+	--color-red-contrast-rgb: 255,255,255;
+	--color-red-shade: #aa4c3f;
+	--color-red-tint: #c7675a;
+
+    --color-orange: #e58b5e;
+	--color-orange-rgb: 229,139,94;
+	--color-orange-contrast: #000000;
+	--color-orange-contrast-rgb: 0,0,0;
+	--color-orange-shade: #ca7a53;
+	--color-orange-tint: #e8976e;
+
+    --color-yellow: #c9b885;
+	--color-yellow-rgb: 201,184,133;
+	--color-yellow-contrast: #000000;
+	--color-yellow-contrast-rgb: 0,0,0;
+	--color-yellow-shade: #b1a275;
+	--color-yellow-tint: #cebf91;
+
+    --color-secondary: #d6ccae;
+	--color-secondary-rgb: 214,204,174;
+	--color-secondary-contrast: #000000;
+	--color-secondary-contrast-rgb: 0,0,0;
+	--color-secondary-shade: #bcb499;
+	--color-secondary-tint: #dad1b6;
+
+    --color-background: #17191a;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+body:after {
+    background-image: url("../img/noise.png");
+    content: " ";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 500;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.centered-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.form-control {
+    padding: 0.5rem 0;
+}
+
+.form-control__label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-control__input {
+    padding: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--color-primary);
+    width: 100%;
+}
+
+.form-control__input:focus {
+    outline: none;
+}
