@@ -19,7 +19,7 @@ services:
     depends_on:
       - db
     volumes:
-      - ./realitymod/:/opt/keycloak/themes/realitymod/
+      - ./src/main/resources/theme/realitymod/:/opt/keycloak/themes/realitymod/
     environment:
       KC_DB: postgres
       KC_DB_USERNAME: keycloak

@@ -1,0 +1,6 @@
+{
+    "themes": [{
+        "name" : "realitymod",
+        "types": [ "login" ]
+    }]
+}
