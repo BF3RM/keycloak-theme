@@ -86,7 +86,20 @@ body:after {
     min-height: 100vh;
 }
 
+.page-header img {
+    max-width: 300px;
+}
+
+.form-container {
+    background-color: rgba(var(--color-primary-rgb), 0.1);
+    border: 1px solid rgba(var(--color-primary-rgb), 0.5);
+    padding: 2rem;
+    width: 100vw;
+    max-width: 475px;
+}
+
 .form-control {
+    display: block;
     padding: 0.5rem 0;
 }
 
@@ -106,4 +119,11 @@ body:after {
 
 .form-control__input:focus {
     outline: none;
+}
+
+.form-settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

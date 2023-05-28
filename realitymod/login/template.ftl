@@ -39,8 +39,7 @@
 <body>
 <div class="${properties.kcLoginClass!}">
     <div id="kc-header" class="${properties.kcHeaderClass!}">
-        <div id="kc-header-wrapper"
-             class="${properties.kcHeaderWrapperClass!}">${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}</div>
+        <img src="${url.resourcesPath}/img/logo.png" alt="logo" class="logo">
     </div>
     <div class="${properties.kcFormCardClass!}">
         <header class="${properties.kcFormHeaderClass!}">
@@ -60,7 +59,7 @@
                     </div>
                 </div>
             </#if>
-        <#if !(auth?has_content && auth.showUsername() && !auth.showResetCredentials())>
+        <#--  <#if !(auth?has_content && auth.showUsername() && !auth.showResetCredentials())>  -->
             <#if displayRequiredFields>
                 <div class="${properties.kcContentWrapperClass!}">
                     <div class="${properties.kcLabelWrapperClass!} subtitle">
@@ -73,7 +72,7 @@
             <#else>
                 <h1 id="kc-page-title"><#nested "header"></h1>
             </#if>
-        <#else>
+        <#--  <#else>
             <#if displayRequiredFields>
                 <div class="${properties.kcContentWrapperClass!}">
                     <div class="${properties.kcLabelWrapperClass!} subtitle">
@@ -104,7 +103,7 @@
                     </a>
                 </div>
             </#if>
-        </#if>
+        </#if>  -->
       </header>
       <div id="kc-content">
         <div id="kc-content-wrapper">

@@ -2,8 +2,8 @@ body,
 *,
 *::before,
 *::after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .h1,
@@ -194,6 +194,9 @@ ul li:before {
 .btn:hover:not(.disabled) {
     background-color: #fff;
     color: #000;
+}
+.btn.btn-block {
+    width: 100%;
 }
 
 .tags {
